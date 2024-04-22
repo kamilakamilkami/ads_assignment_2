@@ -1,7 +1,6 @@
 import Lists.MyArrayList;
 import Lists.MyList;
 
-
 public class Main {
     public static void main(String[] args) {
         MyList<Integer> myArrayList = new MyArrayList<>();
