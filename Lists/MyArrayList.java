@@ -1,5 +1,11 @@
 package Lists;
 
+import java.util.Iterator;
+
+/**
+ * @param <T> implements the MyList interface using an array as its underlying storage.
+ *It provides methods to add, get, set, remove elements, and perform other operations commonly associated with lists.
+ */
 public class MyArrayList<T> implements MyList<T> {
     private static final int DEFAULT_SIZE = 5;
 
@@ -127,6 +133,11 @@ public class MyArrayList<T> implements MyList<T> {
     @Override
     public int size() {
         return size;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return null;
     }
 
     @Override

@@ -1,5 +1,11 @@
 package Lists;
 
+import java.util.Iterator;
+
+/**
+ * This is the MyList interface,
+ * which defines a contract for classes that represent lists of elements.
+ */
 public interface MyList<T> {
     void add(T item);
     void add(T item, int index);
@@ -19,4 +25,6 @@ public interface MyList<T> {
     T[] toArray();
     void clear();
     int size();
+
+    Iterator<T> iterator();
 }
